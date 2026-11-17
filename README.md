@@ -1,18 +1,16 @@
 # Proyecto C: Curva de luz de un púlsar
+Este proyecto trata sobre la curva de luz de un púlsar, que es una estrella que emite un pulso de luz que se repite cada cierto tiempo. Los datos tienen 1000 periodos, con 1000 puntos cada uno, pero tienen tanto ruido que el pulso no se ve a simple vista.
 
-Análisis de la curva de luz de un púlsar (1000 periodos de 1000 puntos cada uno).
-Se hace el folding (plegado) de los datos con NumPy, se ajusta una gaussiana al perfil
-promedio con SciPy y se grafican los resultados.
+Para poder verlo se hizo un plegado (folding): se ponen todos los periodos uno encima de otro y se saca el promedio, con lo que el ruido baja y el pulso aparece. Después, al perfil promedio se le ajustó una curva gaussiana y se hicieron los gráficos.
 
 ## Archivos
 - `pulsar_folding.ipynb`: notebook con todo el análisis (se puede abrir en Google Colab).
-- `figuras/`: gráficos usados en el informe.
+- `pulsar_resultados.png` `pulsar_pulsos_ruido.png`: gráficos usados en el informe.
 - `requirements.txt`: librerías necesarias.
 
 ## Datos
 El archivo `datos_C_curvaluz_pulsar.csv` es el entregado por el profesor para el proyecto.
-No se incluye en este repositorio porque pesa más de 25 MB. Para ejecutar el notebook,
-se debe dejar ese archivo en la misma carpeta (en Colab, subirlo desde el ícono de la carpeta).
+No se incluye en este repositorio porque pesa más de 25 MB.
 
 ## Cómo ejecutarlo
 1. Abrir `pulsar_folding.ipynb` en Google Colab.
